@@ -1,0 +1,539 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+/* jua import url */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+/* Black han Sans */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+/* Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+/* Courgette */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+/* Nanum Gothic */
+
+
+/* font-family: 'Jua', sans-serif; */
+/* font-family: 'Black Han Sans', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Courgette', cursive; */
+/* font-family: 'Nanum Gothic', sans-serif; */
+*{
+  box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+  max-width: 100%;
+  border-bottom: 1px solid #333;
+}
+header .header_in{
+  width: 1400px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+header .header_in .logo{
+  width: 25%;
+}
+header .header_in .logo img{
+  width: 25%;
+  max-width: 25%;
+  padding: 2% 0;
+}
+header .header_in .nav{
+  width: 75%;
+  max-width: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+header .header_in .nav ul{
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+header .header_in .nav ul li{
+  width: 15%;
+  max-width: 15%;
+  font-family: 'Jua', sans-serif;
+  font-size: 22px;
+  text-align: center;
+}
+
+
+
+/* section style */
+section{
+  width: 100%;
+  max-width: 100%;
+}
+
+/* main_cover style */
+section #main_cover{
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #333;
+}
+section #main_cover .main_cover_in{
+  width: 1400px;
+  max-width: 1400px;
+  height: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+section #main_cover .main_cover_in .text{
+  position: absolute;
+  margin-top: 10%;
+}
+section #main_cover .main_cover_in .text h2{
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 60px;
+  font-weight: normal;
+  padding-bottom: 20%;
+}
+section #main_cover .main_cover_in .text p{
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 40px;
+}
+section #main_cover .main_cover_in .text span{
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+}
+section #main_cover .main_cover_in .square{
+  position: absolute;
+  top: 200px;
+  right: 100px;
+}
+section #main_cover .main_cover_in .square img{
+  transform: scale(1.2);
+}
+
+/* Profile Style */
+section #profile{
+  width: 100%;
+  max-width: 100%;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+section #profile .profile_in{
+  width: 1400px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+/* Profile 제목 Style */
+section #profile .profile_in .title{
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+section #profile .profile_in .title h1{
+  margin-top: 40px;
+  font-size: 38px;
+  font-family: 'Courgette', cursive;
+}
+
+/* Profile_box Style */
+section #profile .profile_in .profile_box{
+  width: 1400px;
+  max-width: 1400px;
+  margin: 0 auto;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+/* img_box 좌측 사진, 신상정보 Style */
+section #profile .profile_in .profile_box .img_box{
+  width: 690px;
+  margin-left: 9px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+section #profile .profile_in .profile_box .img_box img{
+  width: 80%;
+}
+section #profile .profile_in .profile_box .img_box .personal_left{
+  width: 30%;
+}
+section #profile .profile_in .profile_box .img_box .personal_left .left_in{
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+section #profile .profile_in .profile_box .img_box .personal_left .left_in span{
+  font-size: 26px;
+}
+section #profile .profile_in .profile_box .img_box .personal_left .left_in span:nth-child(1){
+  font-family: 'Black Han Sans', sans-serif;
+}
+section #profile .profile_in .profile_box .img_box .personal_left .left_in span:nth-child(2){
+  font-family: 'Raleway', sans-serif;
+}
+
+section #profile .profile_in .profile_box .img_box .personal_right{
+  width: 60%;
+}
+section #profile .profile_in .profile_box .img_box .personal_right .right_in{
+  width: 100%;
+  margin-bottom: 22px;
+  margin-top: 20px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* spec_list 우측 학력~경력 Style */
+section #profile .profile_in .profile_box .spec_list{
+  width: 690px;
+  margin-left: 9px;
+  display: flex;
+  flex-flow: row wrap;
+}
+section #profile .profile_in .profile_box .spec_list .education{
+  width: 100%;
+}
+section #profile .profile_in .profile_box .spec_list .education .spec_title{
+  width: 100%;
+  margin-bottom: 2px;
+}
+section #profile .profile_in .profile_box .spec_list .education>span{
+  display: block;
+  font-size: 22px;
+}
+section #profile .profile_in .profile_box .spec_list .education>span:nth-child(2){
+  margin-bottom: 10px;
+}
+section #profile .profile_in .profile_box .spec_list .education>span:nth-child(3){
+  font-weight: bold;
+}
+section #profile .profile_in .profile_box .spec_list .spec_title span:nth-child(1){
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 26px;
+}
+section #profile .profile_in .profile_box .spec_list .spec_title span:nth-child(2){
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+}
+
+section #profile .profile_in .profile_box .spec_list .certificate{
+  width: 100%;
+  margin-top: 30px;
+}
+section #profile .profile_in .profile_box .spec_list .certificate p{
+  font-size: 22px;
+  font-family: 'Nanum Gothic', sans-serif;
+  margin-bottom: 16px;
+  margin-top: 10px;
+}
+section #profile .profile_in .profile_box .spec_list .career{
+  width: 100%;
+  margin-top: 10px;
+}
+section #profile .profile_in .profile_box .spec_list .career p{
+  font-size: 22px;
+}
+section #profile .profile_in .profile_box .spec_list .career p:nth-child(3){
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+section #profile .profile_in .profile_box .spec_list .career p:nth-child(2){
+  margin-top: 10px;
+}
+
+/* skill Style */
+section #profile .profile_in .profile_box .skill_box{
+  width: 1400px;
+  max-width: 1400px;
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+section #profile .profile_in .profile_box .skill_box .skill_title{
+  width: 1400px;
+  text-align: center;
+}
+section #profile .profile_in .profile_box .skill_box .skill_title h1{
+  font-family: 'Courgette', cursive;
+  font-size: 30px;
+}
+
+/* bar animation */
+@keyframes bar_ani{
+  from{
+    width: 0%;
+  }
+  to{
+    width: 90%;
+  }
+}
+
+section #profile .profile_in .profile_box .skill_box .photo{
+  width: 250px;
+  height: 200px;
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+section #profile .profile_in .profile_box .skill_box img{
+  width: 150px;
+  height: 150px;
+}
+section #profile .profile_in .profile_box .skill_box .bar{
+  width: 230px;
+  height: 30px;
+  position: absolute;
+  background: rgb(231, 231, 231);
+  top: 160px;
+}
+section #profile .profile_in .profile_box .skill_box .animation{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: orangered;
+  animation: bar_ani 3s forwards;
+}
+section #profile .profile_in .profile_box .skill_box .skill_level{
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  font-size: 24px;
+  font-family: 'Jua', sans-serif;
+  position: absolute;
+  line-height: 32px;
+  z-index: 10;
+}
+section #profile .profile_in .profile_box .skill_box .illust{
+  width: 250px;
+  height: 200px;
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+section #profile .profile_in .profile_box .skill_box .illust img{
+  width: 135px;
+  height: 135px;
+  margin-top: 5px;
+}
+section #profile .profile_in .profile_box .skill_box .html{
+  width: 250px;
+  height: 200px;
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+section #profile .profile_in .profile_box .skill_box .html img{
+  height: 140px;
+}
+section #profile .profile_in .profile_box .skill_box .css{
+  width: 250px;
+  height: 200px;
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+section #profile .profile_in .profile_box .skill_box .css img{
+  height: 140px;
+}
+section #profile .profile_in .profile_box .skill_box .jquery{
+  width: 250px;
+  height: 200px;
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+section #profile .profile_in .profile_box .skill_box .jquery img{
+  width: 110px;
+  height: 140px;
+}
+
+/* Web Design Style */
+section #web_design{
+  width: 100%;
+  max-width: 100%;
+  border-bottom: 1px solid #333;
+}
+section #web_design .web_design_in{
+  width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+section #web_design .web_design_in .title{
+  width: 200px;
+  margin: 0 auto;
+}
+section #web_design .web_design_in .title span{
+  margin-top: 20px;
+  font-size: 38px;
+  font-family: 'Courgette', cursive;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+section #web_design .web_design_in .title .eng{
+  font-weight: bold;
+}
+
+/* Web Design thumbnail Style */
+section #web_design .web_design_in .thumbs{
+  width: 100%;
+  height: 900px;
+  display: none;
+/*   display: flex;
+  flex-flow: row wrap; */
+  position: absolute;
+}
+
+/* Thumb WebDesign Style */
+section #web_design .web_design_in .thumbs .thumb_web{
+  width: 50%;
+  height: 900px;
+  background: yellow;
+  text-align: center;
+}
+section #web_design .web_design_in .thumbs .thumb_web p{
+  font-size: 60px;
+  font-family: 'Jua', sans-serif;
+  margin-top: 300px;
+  text-align: center;
+}
+section #web_design .web_design_in .thumbs .thumb_web span{
+  font-size: 50px;
+  font-family: 'Black Han Sans', sans-serif;
+  text-align: center;
+}
+
+/* Thumb UIUX Style */
+section #web_design .web_design_in .thumbs .thumb_uiux{
+  width: 50%;
+  height: 900px;
+  background: aqua;
+  text-align: center;
+}
+section #web_design .web_design_in .thumbs .thumb_uiux p{
+  font-size: 60px;
+  font-family: 'Jua', sans-serif;
+  margin-top: 300px;
+  text-align: center;
+}
+section #web_design .web_design_in .thumbs .thumb_uiux span{
+  font-size: 50px;
+  font-family: 'Black Han Sans', sans-serif;
+  text-align: center;
+}
+
+section #web_design .web_design_in .graphic_design{
+  width: 1400px;
+  height: 900px;
+  background: #8d99ae;
+  position: absolute;
+  display: flex;
+  display: none;
+
+}
+section #web_design .web_design_in .graphic_design .graphic_list_1{
+  width: 1400px;
+  margin: 220px auto;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+}
+section #web_design .web_design_in .graphic_design .GD_box{
+  width: 280px;
+  height: 300px;
+  background: #fff;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+section #web_design .web_design_in .graphic_design .GD_box .GD_title{
+  width: 280px;
+  height: 80px;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+section #web_design .web_design_in .graphic_design .GD_box .GD_title span{
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  line-height: 40px;
+}
+section #web_design .web_design_in .graphic_design .GD_box .GD_title p{
+  font-size: 20px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+section #web_design .web_design_in .uiux_design{
+  width: 1400px;
+  background: #8d99ae;
+  position: absolute;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+section #web_design .web_design_in .uiux_design .uiux_list{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 280px auto;
+}
+section #web_design .web_design_in .uiux_design .uiux_box{
+  width: 80%;
+  height: 300px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+section #web_design .web_design_in .uiux_design .uiux_box .uiux_title{
+  width: 20%;
+  height: 100%;
+  background: aliceblue;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+section #web_design .web_design_in .uiux_design .uiux_box .uiux_title span{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  line-height: 40px;
+}
+section #web_design .web_design_in .uiux_design .uiux_box .uiux_title p{
+  font-size: 20px;
+  font-family: 'Nanum Gothic', sans-serif;
+}

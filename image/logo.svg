@@ -1,0 +1,93 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      @keyframes circle-animation{
+        0%{
+          stroke-dashoffset: 618;
+        }
+        60%{
+          stroke-dashoffset: 0;
+        }
+        80%{
+          fill: transparent;
+        }
+        100%{
+          fill: #eaeaea;
+        }
+      }
+
+      @keyframes cls2-animation{
+        from{
+          stroke-dashoffset:595;
+        }
+        to{
+          stroke-dashoffset:0;
+        }
+      }
+
+      @keyframes cls3-animation{
+        from{
+          stroke-dashoffset:463;
+        }
+        to{
+          stroke-dashoffset:0;
+        }
+      }
+
+      @keyframes cls4-animation{
+        from{
+          stroke-dashoffset:278;
+        }
+        to{
+          stroke-dashoffset:0;
+        }
+      }
+
+      .cls-1 {
+        stroke-dasharray:620;
+        stroke-dashoffset: 0;
+        fill: transparent;
+        animation: circle-animation 3s;
+        animation-fill-mode: forwards;
+        stroke-width: 2px;
+        stroke: #eaeaea;
+      }
+
+      .cls-2 {
+        fill: #669;
+        stroke: #669;
+        stroke-dasharray: 595;
+        stroke-dashoffset: 0;
+        animation: cls2-animation 3s;
+        animation-fill-mode: forwards;
+      }
+
+      .cls-3 {
+        fill: #cc6;
+        stroke: #cc6;
+        stroke-dasharray: 463;
+        stroke-dashoffset: 0;
+        animation: cls3-animation 3s;
+        animation-fill-mode: forwards;
+      }
+
+      .cls-4 {
+        fill: #c96;
+        stroke: #c96;
+        stroke-dasharray: 278;
+        stroke-dashoffset: 0;
+        animation: cls4-animation 3s;
+        animation-fill-mode: forwards;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 2px;
+      }
+
+    </style>
+  </defs>
+  <circle class="cls-1 cls1-1" cx="98.54" cy="98.54" r="98.54"/>
+  <path class="cls-2" d="M 161.13 41.95 161.13 151.01 98.54 169.78 35.95 151.01 35.95 107.2 31.96 107.2 31.96 149.81 31.96 153.81 98.54 173.78 165.12 153.81 165.12 149.81 165.12 40.62 161.13 41.95z"/>
+  <path class="cls-3" d="M 98.54 60.59 38.62 42.61 31.96 40.62 31.96 44.61 96.54 63.99 96.54 159.13 100.54 159.13 100.54 63.99 158.47 46.61 158.47 42.61 98.54 60.59z"/>
+  <path class="cls-4" d="M 65.25 83.05 64.94 83.05 64.96 82.97 35.95 74.26 35.95 58.97 63.8 67.48 64.96 63.66 31.96 53.76 31.96 55.75 31.96 57.75 31.96 73.06 31.96 75.73 31.96 77.06 61.26 86.02 61.26 101.75 31.96 92.37 32.01 97.04 65.25 107.02 65.24 103.03 65.25 103.03 65.25 83.05z"/>
+</svg>
