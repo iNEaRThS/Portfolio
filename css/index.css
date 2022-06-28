@@ -1,4 +1,5 @@
 @import url(common.css);
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 /* jua import url */
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
@@ -373,10 +374,13 @@ section #profile .profile_in .profile_box .skill_box .jquery img{
 /* Web Design Style */
 section #web_design{
   width: 100%;
+  max-width: 100%;
+  height: 900px;
+  margin: 0 auto;
 }
 section #web_design .web_design_in{
   width: 1400px;
-  margin: 0 auto;
+  margin: 50px auto;
   position: relative;
 }
 section #web_design .web_design_in .title{
@@ -400,6 +404,9 @@ section #web_design .web_design_in .thumbs{
   width: 100%;
   height: 900px;
   overflow: hidden;
+  position: absolute;
+  z-index: 20;
+  display: none;
 }
 
 /* Thumb WebDesign Style */
@@ -456,7 +463,6 @@ section #web_design .web_design_in .graphic_design{
   background: #8d99ae;
   position: absolute;
   display: flex;
-  display: none;
 
 }
 section #web_design .web_design_in .graphic_design .graphic_list_1{
@@ -468,6 +474,7 @@ section #web_design .web_design_in .graphic_design .graphic_list_1{
   justify-content: center;
   align-items: center;
   margin-left: 60px;
+  position: relative;
 }
 section #web_design .web_design_in .graphic_design .GD_box{
   width: 280px;
@@ -478,6 +485,17 @@ section #web_design .web_design_in .graphic_design .GD_box{
   position: relative;
   border-radius: 20px;
   overflow: hidden;
+  transition: all 0.3s;
+}
+section #web_design .web_design_in .graphic_design .GD_box:hover{
+  box-shadow: 15px 15px 0px #333;
+}
+section #web_design .web_design_in .graphic_design .graphic_list_1 .GD_box img{
+  width: 100%;
+}
+section #web_design .web_design_in .graphic_design .graphic_list_1 .GD_8 img{
+  width: 100%;
+  height: 80%;
 }
 section #web_design .web_design_in .graphic_design .GD_box .GD_title{
   width: 280px;
@@ -486,6 +504,7 @@ section #web_design .web_design_in .graphic_design .GD_box .GD_title{
   position: absolute;
   bottom: 0;
   text-align: center;
+  border-top: 1px solid #333;
 }
 section #web_design .web_design_in .graphic_design .GD_box .GD_title span{
   font-size: 20px;
@@ -574,3 +593,423 @@ section #web_design .web_design_in .uiux_design .uiux_big_box .uiux_title p{
   font-size: 20px;
   font-family: 'Nanum Gothic', sans-serif;
 }
+
+/* Web Publsish Style */
+section #web_publish{
+  width: 100%;
+  height: 800px;
+  margin: 150px auto 0px;
+  border-bottom: 1px solid #333;
+  background: linear-gradient(-45deg, #ffafbd, #ffc3a0, #ee9ca7, #ffdde1);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+section #web_publish .title{
+  width: 500px;
+  margin: 0 auto;
+}
+section #web_publish .title span{
+  margin-top: 20px;
+  font-size: 38px;
+  font-family: 'Courgette', cursive;
+  display: block;
+  text-align: center;
+  padding-bottom: 10px;
+}
+section #web_publish .title .eng{
+  font-weight: bold;
+}
+section #web_publish .web_publish_in{
+  width: 1400px;
+  height: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+section #web_publish .web_publish_in .nav_btn{
+  width: 1400px;
+  display: flex;
+  justify-content: center;
+}
+section #web_publish .web_publish_in .nav_btn div{
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+  font-family: 'Raleway', cursive;
+  border: 1px solid #333;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+section #web_publish .web_publish_in .nav_btn .nav_btn_style{
+  background: #fff;
+  color: #333;
+  box-shadow:inset 3px 3px 0px #333;
+}
+section #web_publish .web_publish_in .nav_btn div:hover{
+  box-shadow: none;
+}
+section #web_publish .web_publish_in .nav_btn .style_active{
+  background: #4568dc;
+  color: #fff;
+  border: none;
+  box-shadow: 5px 5px 0px #333;
+}
+section #web_publish .web_publish_in .display{
+  position: absolute;
+  right: 20px;
+  bottom: -10px;
+  width: 850px;
+  height: 650px;
+  background: url(../image/monitor_display.png) no-repeat center center;
+}
+section #web_publish .web_publish_in .display .display_show{
+  width: 830px;
+  height: 482px;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  border-radius: 5px;
+  background: #fff;
+  z-index: 200;
+  overflow: hidden;
+}
+section #web_publish .web_publish_in .display .display_show ul{
+  width: 4000px;
+  height: auto;
+  z-index: 200;
+}
+section #web_publish .web_publish_in .display .display_show ul li{
+  width: 830px;
+  height: 482px;
+  float: left;
+  background-position:0 0;
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+}
+.display .display_show ul li:nth-child(1){
+  background: url(../image/seoul_1.JPG);
+}
+.display .display_show ul li:nth-child(2){
+  background: url(../image/harim_1.JPG);
+}
+.display .display_show ul li:nth-child(3){
+  background: url(../image/starbucks_1.JPG);
+}
+.display .display_show ul li:nth-child(4){
+  background: url(../image/samsung_1.JPG);
+}
+section #web_publish .web_publish_in .info_box{
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  left: 50px;
+  top: 80px;
+  overflow: hidden;
+}
+section #web_publish .web_publish_in .info_box ul{
+  width: 1600px;
+  height:inherit;
+  position:absolute;
+}
+section #web_publish .web_publish_in .info_box ul li{
+  width: 400px;
+  height: 600px;
+  border-radius: 30px;
+  border: 1px solid #333;
+  text-align: center;
+  background: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  float: left;
+}
+section #web_publish .web_publish_in .info_box li h3{
+  width: 100%;
+  font-size: 36px;
+  margin-top: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+section #web_publish .web_publish_in .info_box li>img{
+  width: 50%;
+}
+section #web_publish .web_publish_in .info_box li h4{
+  font-size: 24px;
+  width: 100%;
+}
+section #web_publish .web_publish_in .info_box li .tools{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+section #web_publish .web_publish_in .info_box li .html{
+  width: 100px;
+  height: 140px;
+  display: flex;
+  flex-flow: column wrap;
+}
+section #web_publish .web_publish_in .info_box li .css{
+  width: 100px;
+  height: 140px;
+  display: flex;
+  flex-flow: column wrap;
+}
+section #web_publish .web_publish_in .info_box li .css img{
+  width: 102%;
+}
+section #web_publish .web_publish_in .info_box li .html img{
+  width: 100%;
+}
+section #web_publish .web_publish_in .info_box li .html span{
+  font-size: 20px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+section #web_publish .web_publish_in .info_box li .css span{
+  font-size: 20px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+section #web_publish .web_publish_in .info_box li h5{
+  font-size: 26px;
+  margin-top: 5px;
+}
+section #web_publish .web_publish_in .info_box li p{
+  font-size: 24px;
+  margin-top: 5px;
+}
+section #web_publish .web_publish_in .info_box li .gosite_btn{
+  width: 300px;
+  height: 80px;
+  border: 1px solid #333;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 80px;
+  transition: all 0.3s;
+}
+section #web_publish .web_publish_in .info_box li .gosite_btn a{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Jua', sans-serif;
+  display: block;
+}
+section #web_publish .web_publish_in .info_box li .gosite_btn a i{
+  font-size: 30px;
+  font-weight: bold;
+}
+section #web_publish .web_publish_in .info_box li .gosite_btn:hover{
+  background: bisque;
+  box-shadow: 5px 5px 0px #333;
+}
+section #web_publish .web_publish_in .info_box .info_box_1 .img_box{
+  width: 120px;
+  height: 120px;
+  background: url(../image/seoulsky_logo.png) no-repeat center center;
+  background-size: 100%;
+}
+section #web_publish .web_publish_in .info_box .info_box_2 .img_box{
+  width: 120px;
+  height: 120px;
+  background: url(../image/harim_logo.png) no-repeat center center;
+  background-size: 100%;
+}
+section #web_publish .web_publish_in .info_box .info_box_3 .img_box{
+  width: 120px;
+  height: 120px;
+  background: url(../image/starbucks_logo.png) no-repeat center center;
+  background-size: 100%;
+}
+section #web_publish .web_publish_in .info_box .info_box_4 .img_box{
+  width: 120px;
+  height: 120px;
+  background: url(../image/samsung_logo.png) no-repeat center center;
+  background-size: 100%;
+}
+
+#graphic_modal{
+  display: none;
+}
+
+
+
+/* Responsive Web Style */
+section #responsive_web{
+  width: 100%;
+  height: 800px;
+  margin-top: 1px solid #333;
+}
+section #responsive_web .responsive_web_in{
+  width: 1400px;
+  margin: 150px auto;
+}
+section #responsive_web .responsive_web_in .title{
+  width: 200px;
+  margin: 0 auto;
+}
+section #responsive_web .responsive_web_in .title span{
+  margin-top: 20px;
+  font-size: 38px;
+  font-family: 'Courgette', cursive;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+section #responsive_web .responsive_web_in .title .eng{
+  font-weight: bold;
+}
+
+
+/* Mobile Style */
+section #mobile{
+  width: 100%;
+  height: 800px;
+  margin: 100px auto;
+  margin-top: 1px solid #333;
+}
+section #mobile .mobile_in{
+  width: 1400px;
+  margin: 0 auto;
+}
+section #mobile .mobile_in .title{
+  width: 200px;
+  margin: 0 auto;
+}
+section #mobile .mobile_in .title span{
+  margin-top: 20px;
+  font-size: 38px;
+  font-family: 'Courgette', cursive;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+section #mobile .mobile_in .title .eng{
+  font-weight: bold;
+}
+
+
+/* Web Planning Style */
+section #web_planning{
+  width: 100%;
+  height: 800px;
+  margin: 100px auto;
+  margin-top: 1px solid #333;
+}
+section #web_planning .web_planning_in{
+  width: 1400px;
+  margin: 0 auto;
+}
+section #web_planning .web_planning_in .title{
+  width: 200px;
+  margin: 0 auto;
+}
+section #web_planning .web_planning_in .title span{
+  margin-top: 20px;
+  font-size: 38px;
+  font-family: 'Courgette', cursive;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+section #web_planning .web_planning_in .title .eng{
+  font-weight: bold;
+}
+
+#graphic_modal{
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:1000;
+	overflow:auto;
+}
+#graphic_modal .graphic_modal_in{
+  position:relative;
+	height:100%;
+	margin:0 auto;
+	width:1400px;
+	background:#fff;
+	z-index:1000;
+}
+#graphic_modal .modal_back{
+  position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+}
+#graphic_modal .graphic_modal_in .graphic_modals>li{
+  width: 1400px;
+	position: absolute;
+	text-align: center;
+	cursor: default;
+	background: #fff;
+	display: none;
+}
+#graphic_modal .graphic_modal_in .g_btn{
+	position:fixed;
+	left:50%;
+	top:0;
+	margin-left:710px;
+	width:80px;
+	height:150px;
+	color:#fff;
+	text-align:center;
+	overflow:hidden;
+	z-index:10000;
+}
+#graphic_modal .graphic_modal_in .g_btn>li{
+	cursor: pointer;
+	overflow: hidden;
+}
+#graphic_modal .graphic_modal_in .g_btn .g_btn_close{
+	height:70px;
+	width:80px;
+	cursor:pointer;
+	border-bottom:1px solid #fff;
+}
+#graphic_modal .graphic_modal_in .g_btn .g_btn_close i{
+	position:relative;
+	top:15px;
+	font-size:40px;
+}
+#graphic_modal .graphic_modal_in .g_btn .g_left_btn, .g_btn .g_right_btn{
+  float:left;
+}
+#graphic_modal .graphic_modal_in .g_btn .g_left_btn i, .g_btn .g_right_btn i{
+	position:relative;
+	top:10px;
+	font-size:30px;
+	width:40px;
+	height:50px;
+}
+#graphic_modal .graphic_modal_in .g_btn .g_page{ 
+	font-size:12px;
+	color:#fff;
+	width:80px;
+	padding-top:10px;
+	height:50px;
+	text-align:center;
+  border-top:1px solid #fff;
+}
+
