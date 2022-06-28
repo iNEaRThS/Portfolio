@@ -372,237 +372,150 @@ section #profile .profile_in .profile_box .skill_box .jquery img{
 }
 
 /* Web Design Style */
-section #web_design{
+#web_design{
   width: 100%;
   max-width: 100%;
-  height: 900px;
   margin: 0 auto;
+  background-color: #f8f8f8;
 }
-section #web_design .web_design_in{
+#web_design .web_design_top_bar{
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background: bisque;
+}
+#web_design .web_design_top_bar .web_design_top_bar_in{
   width: 1400px;
-  margin: 50px auto;
-  position: relative;
-}
-section #web_design .web_design_in .title{
-  width: 200px;
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
 }
-section #web_design .web_design_in .title span{
-  margin-top: 20px;
-  font-size: 38px;
+#web_design .web_design_top_bar .web_design_top_bar_in .title{
+  width: 700px;
   font-family: 'Courgette', cursive;
-  display: block;
-  text-align: center;
-  padding-bottom: 20px;
-}
-section #web_design .web_design_in .title .eng{
+  font-size: 34px;
   font-weight: bold;
+  line-height: 60px;
 }
-
-/* Web Design thumbnail Style */
-section #web_design .web_design_in .thumbs{
-  width: 100%;
-  height: 900px;
-  overflow: hidden;
-  position: absolute;
-  z-index: 20;
-  display: none;
-}
-
-/* Thumb WebDesign Style */
-section #web_design .web_design_in .thumbs .thumb_web{
-  width: 50%;
-  height: 100%;
-  background: yellow;
+#web_design .web_design_top_bar .web_design_top_bar_in .graphic_design_btn{
+  width: 300px;
+  font-size: 28px;
   text-align: center;
-  float: left;
-}
-section #web_design .web_design_in .thumbs .thumb_web .web_text{
-  width: 100%;
-  height: 100%;
-}
-section #web_design .web_design_in .thumbs .thumb_web p{
-  font-size: 60px;
-  font-family: 'Jua', sans-serif;
-  text-align: center;
-}
-section #web_design .web_design_in .thumbs .thumb_web span{
-  font-size: 50px;
-  font-family: 'Black Han Sans', sans-serif;
-  text-align: center;
-  display: inline-block;
-}
-
-/* Thumb UIUX Style */
-section #web_design .web_design_in .thumbs .thumb_uiux{
-  width: 50%;
-  height: 100%;
-  background: aqua;
-  text-align: center;
-  display: inline-block;
-}
-section #web_design .web_design_in .thumbs .thumb_uiux p{
-  font-size: 60px;
-  font-family: 'Jua', sans-serif;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-}
-section #web_design .web_design_in .thumbs .thumb_uiux span{
-  font-size: 50px;
-  font-family: 'Black Han Sans', sans-serif;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-}
-
-section #web_design .web_design_in .graphic_design{
-  width: 1400px;
-  height: 900px;
-  background: #8d99ae;
-  position: absolute;
-  display: flex;
-
-}
-section #web_design .web_design_in .graphic_design .graphic_list_1{
-  width: 1400px;
-  margin: 220px auto;
-  text-align: center;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  margin-left: 60px;
-  position: relative;
-}
-section #web_design .web_design_in .graphic_design .GD_box{
-  width: 280px;
-  height: 300px;
-  background: #fff;
-  margin-right: 50px;
-  margin-bottom: 50px;
-  position: relative;
+  border: 1px solid #333;
   border-radius: 20px;
-  overflow: hidden;
-  transition: all 0.3s;
+  padding: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  background: #fff;
 }
-section #web_design .web_design_in .graphic_design .GD_box:hover{
-  box-shadow: 15px 15px 0px #333;
-}
-section #web_design .web_design_in .graphic_design .graphic_list_1 .GD_box img{
-  width: 100%;
-}
-section #web_design .web_design_in .graphic_design .graphic_list_1 .GD_8 img{
-  width: 100%;
-  height: 80%;
-}
-section #web_design .web_design_in .graphic_design .GD_box .GD_title{
-  width: 280px;
-  height: 80px;
-  background: white;
-  position: absolute;
-  bottom: 0;
+#web_design .web_design_top_bar .web_design_top_bar_in .uiux_design_btn{
+  width: 300px;
+  font-size: 28px;
   text-align: center;
-  border-top: 1px solid #333;
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 20px;
+  cursor: pointer;
+  background: #fff;
 }
-section #web_design .web_design_in .graphic_design .GD_box .GD_title span{
-  font-size: 20px;
-  text-align: center;
-  font-weight: bold;
-  font-family: 'Raleway', sans-serif;
-  line-height: 40px;
-}
-section #web_design .web_design_in .graphic_design .GD_box .GD_title p{
-  font-size: 20px;
-  font-family: 'Nanum Gothic', sans-serif;
+#web_design .web_design_top_bar .web_design_top_bar_in .btn_active{
+  background: rgb(39,167,200);
+  background: linear-gradient(90deg, rgba(39,167,200,1) 0%, rgba(133,223,244,1) 100%);
+  color: #fff;
 }
 
-section #web_design .web_design_in .uiux_design{
+
+
+#web_design .web_design_in{
   width: 1400px;
-  background: #8d99ae;
-  position: absolute;
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
+  margin: 40px auto;
+  padding-bottom: 40px;
   display: none;
 }
-section #web_design .web_design_in .uiux_design .uiux_list{
+/* Web_design -> Graphic_Design */
+#web_design .web_design_in .grid_item{
+  width: 1400px;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+}
+#web_design .web_design_in .grid_item .items{
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #333;
+    transition: all 0.3s;
+}
+#web_design .web_design_in .grid_item .items:hover{
+  box-shadow: 5px 5px 10px #333;
+}
+#web_design .web_design_in .grid_item .items img{
   width: 100%;
-  text-align: center;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin: 300px auto 0px;
-}
-section #web_design .web_design_in .uiux_design .uiux_box{
-  width: 40%;
-  height: 300px;
-  background: #fff;
-  position: relative;
-  overflow: hidden;
-  margin-right: 3%;
-  margin-bottom: 3%;
-}
-section #web_design .web_design_in .uiux_design .uiux_box:nth-child(odd){
-  margin-right: 0;
-}
-section #web_design .web_design_in .uiux_design .uiux_big_box{
-  width: 83%;
-  height: 300px;
-  background: #fff;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 3%;
-}
-section #web_design .web_design_in .uiux_design .uiux_box .uiux_title{
-  width: 20%;
   height: 100%;
-  background: aliceblue;
+}
+#web_design .web_design_in .grid_item .items .hover_box{
+  width: 100%;
+  height: 80px;
+  background: rgba(0,0,0,0.7);
   position: absolute;
-  bottom: 0;
+  bottom: -80px;
+  color: #fff;
   text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-section #web_design .web_design_in .uiux_design .uiux_box .uiux_title span{
-  font-size: 20px;
-  font-weight: bold;
+#web_design .web_design_in .grid_item .items .hover_box span{
+  font-family: 'Jua', sans-serif;
+  font-size: 28px;
+  line-height: 42px;
+}
+#web_design .web_design_in .grid_item .items .hover_box p{
   font-family: 'Raleway', sans-serif;
-  line-height: 40px;
-}
-section #web_design .web_design_in .uiux_design .uiux_box .uiux_title p{
-  font-size: 20px;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 22px;
 }
 
-section #web_design .web_design_in .uiux_design .uiux_big_box .uiux_title{
-  width: 20%;
-  height: 100%;
-  background: aliceblue;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
+/* Web_design -> UIUX_Design */
+#web_design .uiux_design_in{
+  width: 1400px;
+  margin: 40px auto;
+  padding-bottom: 40px;
 }
-section #web_design .web_design_in .uiux_design .uiux_big_box .uiux_title span{
-  font-size: 20px;
-  font-weight: bold;
-  font-family: 'Raleway', sans-serif;
-  line-height: 40px;
+/* Web_design -> Graphic_Design */
+#web_design .uiux_design_in .uiux_grid_item{
+  width: 1400px;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 20px;
 }
-section #web_design .web_design_in .uiux_design .uiux_big_box .uiux_title p{
-  font-size: 20px;
-  font-family: 'Nanum Gothic', sans-serif;
+#web_design .uiux_design_in .uiux_grid_item .uiux_items{
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #333;
+    transition: all 0.3s;
 }
+#web_design .uiux_design_in .uiux_grid_item .center{
+  grid-area: span 1 / span 2;
+}
+
+
 
 /* Web Publsish Style */
 section #web_publish{
   width: 100%;
-  height: 800px;
-  margin: 150px auto 0px;
   border-bottom: 1px solid #333;
   background: linear-gradient(-45deg, #ffafbd, #ffc3a0, #ee9ca7, #ffdde1);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
+  position: relative;
 }
 
 @keyframes gradient {
@@ -845,94 +758,6 @@ section #web_publish .web_publish_in .info_box .info_box_4 .img_box{
 }
 
 #graphic_modal{
-  display: none;
-}
-
-
-
-/* Responsive Web Style */
-section #responsive_web{
-  width: 100%;
-  height: 800px;
-  margin-top: 1px solid #333;
-}
-section #responsive_web .responsive_web_in{
-  width: 1400px;
-  margin: 150px auto;
-}
-section #responsive_web .responsive_web_in .title{
-  width: 200px;
-  margin: 0 auto;
-}
-section #responsive_web .responsive_web_in .title span{
-  margin-top: 20px;
-  font-size: 38px;
-  font-family: 'Courgette', cursive;
-  display: block;
-  text-align: center;
-  padding-bottom: 20px;
-}
-section #responsive_web .responsive_web_in .title .eng{
-  font-weight: bold;
-}
-
-
-/* Mobile Style */
-section #mobile{
-  width: 100%;
-  height: 800px;
-  margin: 100px auto;
-  margin-top: 1px solid #333;
-}
-section #mobile .mobile_in{
-  width: 1400px;
-  margin: 0 auto;
-}
-section #mobile .mobile_in .title{
-  width: 200px;
-  margin: 0 auto;
-}
-section #mobile .mobile_in .title span{
-  margin-top: 20px;
-  font-size: 38px;
-  font-family: 'Courgette', cursive;
-  display: block;
-  text-align: center;
-  padding-bottom: 20px;
-}
-section #mobile .mobile_in .title .eng{
-  font-weight: bold;
-}
-
-
-/* Web Planning Style */
-section #web_planning{
-  width: 100%;
-  height: 800px;
-  margin: 100px auto;
-  margin-top: 1px solid #333;
-}
-section #web_planning .web_planning_in{
-  width: 1400px;
-  margin: 0 auto;
-}
-section #web_planning .web_planning_in .title{
-  width: 200px;
-  margin: 0 auto;
-}
-section #web_planning .web_planning_in .title span{
-  margin-top: 20px;
-  font-size: 38px;
-  font-family: 'Courgette', cursive;
-  display: block;
-  text-align: center;
-  padding-bottom: 20px;
-}
-section #web_planning .web_planning_in .title .eng{
-  font-weight: bold;
-}
-
-#graphic_modal{
 	display:none;
 	position:fixed;
 	left:0;
@@ -1013,3 +838,84 @@ section #web_planning .web_planning_in .title .eng{
   border-top:1px solid #fff;
 }
 
+/* Responsive Web Style */
+section #responsive_web{
+  width: 100%;
+  margin-top: 1px solid #333;
+  display: none;
+}
+section #responsive_web .responsive_web_in{
+  width: 1400px;
+  margin: 150px auto;
+}
+section #responsive_web .responsive_web_in .title{
+  width: 200px;
+  margin: 0 auto;
+}
+section #responsive_web .responsive_web_in .title span{
+  margin-top: 20px;
+  font-size: 38px;
+  font-family: 'Courgette', cursive;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+section #responsive_web .responsive_web_in .title .eng{
+  font-weight: bold;
+}
+
+
+/* Mobile Style */
+section #mobile{
+  width: 100%;
+  margin: 100px auto;
+  margin-top: 1px solid #333;
+  display: none;
+}
+section #mobile .mobile_in{
+  width: 1400px;
+  margin: 0 auto;
+}
+section #mobile .mobile_in .title{
+  width: 200px;
+  margin: 0 auto;
+}
+section #mobile .mobile_in .title span{
+  margin-top: 20px;
+  font-size: 38px;
+  font-family: 'Courgette', cursive;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+section #mobile .mobile_in .title .eng{
+  font-weight: bold;
+}
+
+
+/* Web Planning Style */
+section #web_planning{
+  width: 100%;
+  margin: 100px auto;
+  margin-top: 1px solid #333;
+  display: none;
+}
+section #web_planning .web_planning_in{
+  width: 1400px;
+  margin: 0 auto;
+}
+section #web_planning .web_planning_in .title{
+  width: 200px;
+  margin: 0 auto;
+}
+section #web_planning .web_planning_in .title span{
+  margin-top: 20px;
+  font-size: 38px;
+  font-family: 'Courgette', cursive;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+section #web_planning .web_planning_in .title .eng{
+  font-weight: bold;
+}

@@ -1,56 +1,5 @@
 $(document).ready(function(){
 
-/*   let widthheight = true;
-
-  if((widthheight) == true){
-
-    w_thumb_web = $(".thumbs .thumb_web").width();
-
-    if((w_thumb_web) == 100%){
-      $(".thumbs .thumb_uiux").animate({"width":"0%"},200);
-    }else{
-      
-    }
-    $(".thumbs .thumb_web").animate({"width":"100%"});
-  } */
-
-
-/*   $(".thumbs .thumb_web").mouseenter(function(){
-
-    w_thumb_web = $(".thumbs .thumb_web").width();
-
-    if((w_thumb_web) == 100%){
-      $(".thumbs .thumb_uiux").animate({"width":"0%"},200);
-    }else{
-      
-    }
-
-    $(this).stop().animate({"width":"100%"},500);
-    $(".thumbs .thumb_uiux").animate({"width":"0%"},200);
-    $(".thumbs .thumb_uiux .uiux_text").css({"display":"none"});
-  });
-
-
-  $(".thumbs .thumb_web").mouseleave(function(){
-      
-    if(widheight === true){
-      $(".thumbs .thumb_web").stpo().animate({"width":"100%"});
-      $(".thumbs .thumb_uiux").stop().animate({"width":"0%"});
-    }else{
-      $(".thumbs .thumb_web").stop().animate({"width":"50%"});
-      $(".thumbs .thumb_uiux").stop().animate({"width":"50%"});
-    }
-
-    $(this).stop().animate({"width":"50%"},200);
-    $(".thumbs .thumb_uiux").animate({"width":"50%"},500);
-    $(".thumbs .thumb_uiux .uiux_text").css({"display":"block"});
-  });
-
-  $(".thumbs .thumb_web").click(function(){
-    $(this).stop().animate({"height":"20%"});
-  });  */
-
-
   //info_box .gotsite_btn 오버 효과
   $(".info_box li .gosite_btn").mouseenter(function(){
     $(".info_box li .gosite_btn i").animate({"margin-left":"20px"});
@@ -73,10 +22,20 @@ $(document).ready(function(){
 
   });
 
-   // GD_box클릭시 모달창
-  $(".graphic_design .graphic_list_1 .GD_box").click(function(){
 
-    graphic_modals=$(".grpahic_list_1 .GD_box").index()+1; //GD_box의 갯수index
+  //items에 hover시 아래 박스 위로나오기
+  $(".web_design_in .grid_item .items").mouseenter(function(){
+    $(this).find(".hover_box").stop(true,true).animate({"marginBottom":"80px"},200);
+  });
+
+  $(".web_design_in .grid_item .items").mouseleave(function(){
+    $(this).find(".hover_box").stop(true,true).animate({"marginBottom":"0px"},200);
+  });
+
+  var graphic_modals = $(".grid_item .items").index(); //items의 갯수
+   // items클릭시 모달창
+  $(".web_design_in .grid_item .items").click(function(){
+
     $(".g_page span:nth-child(1)").text(graphic_modals+1);
     $("html").css({overflowY:"hidden"});
     $(".graphic_modals>li").eq(graphic_modals).show();
