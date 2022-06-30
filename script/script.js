@@ -1,5 +1,34 @@
 $(document).ready(function(){
 
+  /* //web_design_top_bar 버튼 색상
+  $(".web_design_top_bar_in .top_bar_btn").click(function(){
+    $(".web_design_in").stop().show();
+    $(".web_design_top_bar_in .top_bar_btn").removeClass("btn_active");
+    $(this).addClass("btn_active");
+  }); */
+
+  $(".graphic_design_btn").click(function(){
+    $(".uiux_design_in").stop().hide();
+    $(".graphic_design_in").stop().show();
+    $(".web_design_top_bar_in .top_bar_btn").removeClass("btn_active");
+    $(this).addClass("btn_active");
+  });
+
+  $(".uiux_design_btn").click(function(){
+    $(".graphic_design_in").stop().hide();
+    $(".uiux_design_in").stop().show();
+    $(".web_design_top_bar_in .top_bar_btn").removeClass("btn_active");
+    $(this).addClass("btn_active");
+  });
+
+  /* if($("graphic_design_btn").hasClass("btn_active") === true) {
+    $(".web_design_in").stop().hide();
+    $(".web_design_in").stop().show();
+    } else {
+      $(".web_design_in").stop().hide();
+      $(".uiux_design_in").stop().show();
+    }
+ */
   //info_box .gotsite_btn 오버 효과
   $(".info_box li .gosite_btn").mouseenter(function(){
     $(".info_box li .gosite_btn i").animate({"margin-left":"20px"});
@@ -32,9 +61,14 @@ $(document).ready(function(){
     $(this).find(".hover_box").stop(true,true).animate({"marginBottom":"0px"},200);
   });
 
-  var graphic_modals = $(".grid_item .items").index(); //items의 갯수
-   // items클릭시 모달창
-  $(".web_design_in .grid_item .items").click(function(){
+  var graphic_modals = $(".graphic_design_in .grid_item .items").index(); //items의 갯수
+
+  $(".grid_item .items").click(function(){
+    console.log($(graphic_modals).index());
+  });
+
+   // items클릭시 모달창 (graphic_design)
+  $(".graphic_design_in .grid_item .items").click(function(){
 
     $(".g_page span:nth-child(1)").text(graphic_modals+1);
     $("html").css({overflowY:"hidden"});
@@ -56,7 +90,7 @@ $(document).ready(function(){
 
  });
 
-  /*이전보기*/
+  // 이전보기 (graphic_design) 
  $(".g_btn .g_left_btn").click(function(){
 
     $("#graphic_modal").scrollTop(0); /*스크롤 상단으로 올리기*/
@@ -69,13 +103,66 @@ $(document).ready(function(){
        $(".graphic_modals>li").eq(graphic_modals).stop(true,true).fadeIn();
     }
  });
-
-  /*오른쪽 상단 버튼-닫기*/
+ 
+  //오른쪽 상단보기 닫기 (uiux_design)
  $(".g_btn_close, .modal_back").click(function(){
     $("html").css({overflowY:"scroll"});
     $("#graphic_modal").stop(true,true).fadeOut();
     $(".graphic_modals>li").stop(true,true).hide();
  }); 
+
+
+ var uiux_modals = $(".uiux_grid_item .uiux_items").index(); //items의 갯수
+
+ $(".uiux_grid_item .uiux_items").click(function(){
+  console.log($(uiux_modals).index());
+});
+
+ // items클릭시 모달창 (uiux_design)
+$(".uiux_grid_item .uiux_items").click(function(){
+
+  $(".uu_page span:nth-child(1)").text(uiux_modals+1);
+  $("html").css({overflowY:"hidden"});
+  $(".uiux_modals>li").eq(uiux_modals).show();
+  $("#uiux_modal").stop(true,true).fadeIn();
+});
+
+/*다음보기*/
+$(".uu_btn .uu_right_btn").click(function(){
+
+  $("#uiux_modal").scrollTop(0); /*스크롤 상단으로 올리기*/      
+
+  if(uiux_modals<6){
+     $(".uiux_modals>li").eq(uiux_modals).stop(true,true).fadeOut(); 
+     uiux_modals++;   
+
+     $(".uu_page span:nth-child(1)").text(uiux_modals+1); /*페이지 번호*/
+     $(".uiux_modals>li").eq(uiux_modals).stop(true,true).fadeIn();         
+  }
+
+});
+
+// 이전보기 (uiux_design) 
+$(".uu_btn .uu_left_btn").click(function(){
+
+  $("#uiux_modal").scrollTop(0); /*스크롤 상단으로 올리기*/
+
+  if(uiux_modals>0){
+     $(".uiux_modals>li").eq(uiux_modals).stop(true,true).fadeOut();
+     uiux_modals--;         
+
+     $(".uu_page span:nth-child(1)").text(uiux_modals+1); /*페이지번호*/
+     $(".uiux_modals>li").eq(graphic_modals).stop(true,true).fadeIn();
+  }
+});
+
+//오른쪽 상단보기 닫기 (uiux_design)
+$(".uu_btn_close, .modal_back").click(function(){
+  $("html").css({overflowY:"scroll"});
+  $("#uiux_modal").stop(true,true).fadeOut();
+  $(".uiux_modals>li").stop(true,true).hide();
+}); 
+
 
 
 

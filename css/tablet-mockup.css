@@ -1,0 +1,110 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.tablet .tablet_mockup {
+  width: 900px;
+  height: 650px;
+  position: relative;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tablet .tablet_mockup .outline {
+  border-radius: 37px;
+  position: absolute;
+  width: 98.5%;
+  height: 98.5%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 10px solid #333;
+}
+
+.tablet .tablet_mockup .camera {
+  border-radius: 1px solid red;
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  top: 10px;
+  left: 50%;
+  border-radius: 0 0 10px 10px;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  z-index: 1000;
+}
+
+.tablet .tablet_mockup .camera span {
+  position: absolute;
+  border-radius: 1px solid red;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #555;
+}
+
+.tablet .tablet_mockup .camera span:nth-child(1) {
+  left: 10px;
+}
+
+.tablet .tablet_mockup .camera span:nth-child(2) {
+  right: 10px;
+}
+
+.tablet .tablet_mockup .volume {
+  position: absolute;
+  width: 100px;
+  height: 7px;
+  bottom: 100.8%;
+  left: 120px;
+}
+
+.tablet .tablet_mockup .volume span {
+  position: absolute;
+  width: 100px;
+  height: 7px;
+  background: #666;
+  border-radius: 10px 10px 0 0;
+  top: 0;
+  left: 0;
+}
+
+.tablet .tablet_mockup .power {
+  position: absolute;
+  width: 50px;
+  height: 7px;
+  bottom: 100.8%;
+  left: 250px;
+}
+
+.tablet .tablet_mockup .power span {
+  position: absolute;
+  width: 50px;
+  height: 7px;
+  background: #666;
+  border-radius: 10px 10px 0 0;
+  top: 0;
+  left: 0;
+}
+
+.tablet .tablet_mockup .frame_area {
+  width: 890px;
+  height: 640px;
+  position: absolute;
+  border-radius: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.tablet .tablet_mockup .frame_area iframe {
+  width: 99.5%;
+  height: 100%;
+}

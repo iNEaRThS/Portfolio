@@ -376,7 +376,8 @@ section #profile .profile_in .profile_box .skill_box .jquery img{
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  background-color: #f8f8f8;
+  background: url(../image/graphic_design_bg.jpg) no-repeat center center;
+  background-size: cover;
 }
 #web_design .web_design_top_bar{
   width: 100%;
@@ -405,7 +406,6 @@ section #profile .profile_in .profile_box .skill_box .jquery img{
   width: 300px;
   font-size: 28px;
   text-align: center;
-  border: 1px solid #333;
   border-radius: 20px;
   padding: 20px;
   margin-right: 20px;
@@ -416,7 +416,6 @@ section #profile .profile_in .profile_box .skill_box .jquery img{
   width: 300px;
   font-size: 28px;
   text-align: center;
-  border: 1px solid #333;
   border-radius: 20px;
   padding: 20px;
   cursor: pointer;
@@ -426,40 +425,40 @@ section #profile .profile_in .profile_box .skill_box .jquery img{
   background: rgb(39,167,200);
   background: linear-gradient(90deg, rgba(39,167,200,1) 0%, rgba(133,223,244,1) 100%);
   color: #fff;
+  box-shadow: 5px 5px 5px #333;
 }
 
 
 
-#web_design .web_design_in{
+#web_design .graphic_design_in{
   width: 1400px;
   margin: 40px auto;
   padding-bottom: 40px;
-  display: none;
 }
 /* Web_design -> Graphic_Design */
-#web_design .web_design_in .grid_item{
+#web_design .graphic_design_in .grid_item{
   width: 1400px;
   height: 80vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 50px;
 }
-#web_design .web_design_in .grid_item .items{
+#web_design .graphic_design_in .grid_item .items{
     border-radius: 5px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    box-shadow: 2px 2px 5px #333;
+    box-shadow: 0px 0px 10px #fff;
     transition: all 0.3s;
 }
-#web_design .web_design_in .grid_item .items:hover{
-  box-shadow: 5px 5px 10px #333;
+#web_design .graphic_design_in .grid_item .items:hover{
+  box-shadow: 0px 0px 15px #fff;
 }
-#web_design .web_design_in .grid_item .items img{
+#web_design .graphic_design_in .grid_item .items img{
   width: 100%;
   height: 100%;
 }
-#web_design .web_design_in .grid_item .items .hover_box{
+#web_design .graphic_design_in .grid_item .items .hover_box{
   width: 100%;
   height: 80px;
   background: rgba(0,0,0,0.7);
@@ -470,12 +469,12 @@ section #profile .profile_in .profile_box .skill_box .jquery img{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-#web_design .web_design_in .grid_item .items .hover_box span{
+#web_design .graphic_design_in .grid_item .items .hover_box span{
   font-family: 'Jua', sans-serif;
   font-size: 28px;
   line-height: 42px;
 }
-#web_design .web_design_in .grid_item .items .hover_box p{
+#web_design .graphic_design_in .grid_item .items .hover_box p{
   font-family: 'Raleway', sans-serif;
   font-size: 22px;
 }
@@ -483,30 +482,237 @@ section #profile .profile_in .profile_box .skill_box .jquery img{
 /* Web_design -> UIUX_Design */
 #web_design .uiux_design_in{
   width: 1400px;
-  margin: 40px auto;
+  margin: 0px auto;
+  padding-top: 40px;
   padding-bottom: 40px;
+  display: none;
 }
 /* Web_design -> Graphic_Design */
 #web_design .uiux_design_in .uiux_grid_item{
   width: 1400px;
-  height: 80vh;
+  height: 100vh;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 20px;
 }
 #web_design .uiux_design_in .uiux_grid_item .uiux_items{
     border-radius: 5px;
     overflow: hidden;
-    position: relative;
     cursor: pointer;
+    position: relative;
     box-shadow: 2px 2px 5px #333;
     transition: all 0.3s;
 }
-#web_design .uiux_design_in .uiux_grid_item .center{
-  grid-area: span 1 / span 2;
+#web_design .uiux_design_in .uiux_grid_item .uiux_item_1{
+  background: url(../image/uiux_k2_detail.png) no-repeat;
+}
+#web_design .uiux_design_in .uiux_grid_item .uiux_item_2{
+  background: url(../image/uiux_naver_detail.png) no-repeat;
+}
+#web_design .uiux_design_in .uiux_grid_item .uiux_item_3{
+  background: url(../image/uiux_beskin_detail.png) no-repeat;
+}
+#web_design .uiux_design_in .uiux_grid_item .uiux_item_4{
+  background: url(../image/uiux_aladin_detail.png) no-repeat;
+}
+#web_design .uiux_design_in .uiux_grid_item .uiux_item_5{
+  background: url(../image/uiux_osulrok_detail.png) no-repeat;
+}
+#web_design .uiux_design_in .uiux_grid_item .uiux_item_6{
+  background: url(../image/uiux_starbucks_detail.png) no-repeat;
+}
+#web_design .uiux_design_in .uiux_grid_item .uiux_item_7{
+  background: url(../image/uiux_vigencell_detail.png) no-repeat;
+}
+#web_design .uiux_design_in .uiux_grid_item .logo_hover{
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.9);
+  position: absolute;
+  opacity: 1;
+  transition: all 1s;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+#web_design .uiux_design_in .uiux_grid_item .logo_hover:hover{
+  opacity: 0;
+}
+#web_design .uiux_design_in .uiux_grid_item .uiux_items .logo_hover img{
+  width: 12%;
+}
+#web_design .uiux_design_in .uiux_grid_item .uiux_items .logo_hover span{
+  margin-left: 40%;
+  border-bottom: 3px solid #333;
+  text-align: center;
+  color: #333;
+  font-size: 40px;
+  font-family: 'Jua', sans-serif;
 }
 
+#graphic_modal{
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:1000;
+	overflow:auto;
+}
+#graphic_modal .graphic_modal_in{
+  position:relative;
+	height:100%;
+	margin:0 auto;
+	width:1400px;
+	background:#fff;
+	z-index:1000;
+}
+#graphic_modal .modal_back{
+  position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+}
+#graphic_modal .graphic_modal_in .graphic_modals>li{
+  width: 1400px;
+	position: absolute;
+	text-align: center;
+	cursor: default;
+	background: #fff;
+	display: none;
+}
+#graphic_modal .graphic_modal_in .g_btn{
+	position:fixed;
+	left:50%;
+	top:0;
+	margin-left:710px;
+	width:80px;
+	height:150px;
+	color:#fff;
+	text-align:center;
+	overflow:hidden;
+	z-index:10000;
+}
+#graphic_modal .graphic_modal_in .g_btn>li{
+	cursor: pointer;
+	overflow: hidden;
+}
+#graphic_modal .graphic_modal_in .g_btn .g_btn_close{
+	height:70px;
+	width:80px;
+	cursor:pointer;
+	border-bottom:1px solid #fff;
+}
+#graphic_modal .graphic_modal_in .g_btn .g_btn_close i{
+	position:relative;
+	top:15px;
+	font-size:40px;
+}
+#graphic_modal .graphic_modal_in .g_btn .g_left_btn, .g_btn .g_right_btn{
+  float:left;
+}
+#graphic_modal .graphic_modal_in .g_btn .g_left_btn i, .g_btn .g_right_btn i{
+	position:relative;
+	top:10px;
+	font-size:30px;
+	width:40px;
+	height:50px;
+}
+#graphic_modal .graphic_modal_in .g_btn .g_page{ 
+	font-size:12px;
+	color:#fff;
+	width:80px;
+	padding-top:10px;
+	height:50px;
+	text-align:center;
+  border-top:1px solid #fff;
+}
 
+/* uiux Modal */
+#uiux_modal{
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:1000;
+	overflow:auto;
+}
+#uiux_modal .uiux_modal_in{
+  position:relative;
+	height:100%;
+	margin:0 auto;
+	width:1400px;
+	background:#fff;
+	z-index:1000;
+}
+#uiux_modal .modal_back{
+  position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+}
+#uiux_modal .uiux_modal_in .uiux_modals>li{
+  width: 1400px;
+	position: absolute;
+	text-align: center;
+	cursor: default;
+	background: #fff;
+	display: none;
+}
+#uiux_modal .uiux_modal_in .uu_btn{
+	position:fixed;
+	left:50%;
+	top:0;
+	margin-left:710px;
+	width:80px;
+	height:150px;
+	color:#fff;
+	text-align:center;
+	overflow:hidden;
+	z-index:10000;
+}
+#uiux_modal .uiux_modal_in .uu_btn>li{
+	cursor: pointer;
+	overflow: hidden;
+}
+#uiux_modal .uiux_modal_in .uu_btn .uu_btn_close{
+	height:70px;
+	width:80px;
+	cursor:pointer;
+	border-bottom:1px solid #fff;
+}
+#uiux_modal .uiux_modal_in .uu_btn .uu_btn_close i{
+	position:relative;
+	top:15px;
+	font-size:40px;
+}
+#uiux_modal .uiux_modal_in .uu_btn .uu_left_btn, .uu_btn .uu_right_btn{
+  float:left;
+}
+#uiux_modal .uiux_modal_in .uu_btn .uu_left_btn i, .uu_btn .uu_right_btn i{
+	position:relative;
+	top:10px;
+	font-size:30px;
+	width:40px;
+	height:50px;
+}
+#uiux_modal .uiux_modal_in .uu_btn .uu_page{ 
+	font-size:12px;
+	color:#fff;
+	width:80px;
+	padding-top:10px;
+	height:50px;
+	text-align:center;
+  border-top:1px solid #fff;
+}
 
 /* Web Publsish Style */
 section #web_publish{
@@ -516,6 +722,7 @@ section #web_publish{
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
   position: relative;
+  padding-bottom: 50px;
 }
 
 @keyframes gradient {
@@ -534,7 +741,6 @@ section #web_publish .title{
   margin: 0 auto;
 }
 section #web_publish .title span{
-  margin-top: 20px;
   font-size: 38px;
   font-family: 'Courgette', cursive;
   display: block;
@@ -554,6 +760,7 @@ section #web_publish .web_publish_in .nav_btn{
   width: 1400px;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 section #web_publish .web_publish_in .nav_btn div{
   width: 50px;
@@ -568,6 +775,9 @@ section #web_publish .web_publish_in .nav_btn div{
   margin-right: 50px;
   cursor: pointer;
   transition: all 0.3s;
+}
+#web_publish .web_publish_in .nav_btn div:nth-child(1){
+  margin-left: 50px;
 }
 section #web_publish .web_publish_in .nav_btn .nav_btn_style{
   background: #fff;
@@ -586,7 +796,7 @@ section #web_publish .web_publish_in .nav_btn .style_active{
 section #web_publish .web_publish_in .display{
   position: absolute;
   right: 20px;
-  bottom: -10px;
+  bottom: -25px;
   width: 850px;
   height: 650px;
   background: url(../image/monitor_display.png) no-repeat center center;
@@ -632,7 +842,7 @@ section #web_publish .web_publish_in .info_box{
   height: 600px;
   position: absolute;
   left: 50px;
-  top: 80px;
+  top: 95px;
   overflow: hidden;
 }
 section #web_publish .web_publish_in .info_box ul{
@@ -757,99 +967,17 @@ section #web_publish .web_publish_in .info_box .info_box_4 .img_box{
   background-size: 100%;
 }
 
-#graphic_modal{
-	display:none;
-	position:fixed;
-	left:0;
-	top:0;
-	width:100%;
-	height:100%;
-	z-index:1000;
-	overflow:auto;
-}
-#graphic_modal .graphic_modal_in{
-  position:relative;
-	height:100%;
-	margin:0 auto;
-	width:1400px;
-	background:#fff;
-	z-index:1000;
-}
-#graphic_modal .modal_back{
-  position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0,0,0,0.7);
-}
-#graphic_modal .graphic_modal_in .graphic_modals>li{
-  width: 1400px;
-	position: absolute;
-	text-align: center;
-	cursor: default;
-	background: #fff;
-	display: none;
-}
-#graphic_modal .graphic_modal_in .g_btn{
-	position:fixed;
-	left:50%;
-	top:0;
-	margin-left:710px;
-	width:80px;
-	height:150px;
-	color:#fff;
-	text-align:center;
-	overflow:hidden;
-	z-index:10000;
-}
-#graphic_modal .graphic_modal_in .g_btn>li{
-	cursor: pointer;
-	overflow: hidden;
-}
-#graphic_modal .graphic_modal_in .g_btn .g_btn_close{
-	height:70px;
-	width:80px;
-	cursor:pointer;
-	border-bottom:1px solid #fff;
-}
-#graphic_modal .graphic_modal_in .g_btn .g_btn_close i{
-	position:relative;
-	top:15px;
-	font-size:40px;
-}
-#graphic_modal .graphic_modal_in .g_btn .g_left_btn, .g_btn .g_right_btn{
-  float:left;
-}
-#graphic_modal .graphic_modal_in .g_btn .g_left_btn i, .g_btn .g_right_btn i{
-	position:relative;
-	top:10px;
-	font-size:30px;
-	width:40px;
-	height:50px;
-}
-#graphic_modal .graphic_modal_in .g_btn .g_page{ 
-	font-size:12px;
-	color:#fff;
-	width:80px;
-	padding-top:10px;
-	height:50px;
-	text-align:center;
-  border-top:1px solid #fff;
-}
 
 /* Responsive Web Style */
 section #responsive_web{
   width: 100%;
   margin-top: 1px solid #333;
-  display: none;
 }
 section #responsive_web .responsive_web_in{
   width: 1400px;
-  margin: 150px auto;
+  margin: 0 auto;
 }
 section #responsive_web .responsive_web_in .title{
-  width: 200px;
   margin: 0 auto;
 }
 section #responsive_web .responsive_web_in .title span{
@@ -863,7 +991,6 @@ section #responsive_web .responsive_web_in .title span{
 section #responsive_web .responsive_web_in .title .eng{
   font-weight: bold;
 }
-
 
 /* Mobile Style */
 section #mobile{
