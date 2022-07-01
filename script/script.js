@@ -21,14 +21,6 @@ $(document).ready(function(){
     $(this).addClass("btn_active");
   });
 
-  /* if($("graphic_design_btn").hasClass("btn_active") === true) {
-    $(".web_design_in").stop().hide();
-    $(".web_design_in").stop().show();
-    } else {
-      $(".web_design_in").stop().hide();
-      $(".uiux_design_in").stop().show();
-    }
- */
   //info_box .gotsite_btn 오버 효과
   $(".info_box li .gosite_btn").mouseenter(function(){
     $(".info_box li .gosite_btn i").animate({"margin-left":"20px"});
@@ -53,15 +45,15 @@ $(document).ready(function(){
 
 
   //items에 hover시 아래 박스 위로나오기
-  $(".web_design_in .grid_item .items").mouseenter(function(){
+  $(".graphic_design_in .grid_item .items").mouseenter(function(){
     $(this).find(".hover_box").stop(true,true).animate({"marginBottom":"80px"},200);
   });
 
-  $(".web_design_in .grid_item .items").mouseleave(function(){
+  $(".graphic_design_in .grid_item .items").mouseleave(function(){
     $(this).find(".hover_box").stop(true,true).animate({"marginBottom":"0px"},200);
   });
 
-  var graphic_modals = $(".graphic_design_in .grid_item .items").index(); //items의 갯수
+  var graphic_modals = $(".graphic_design_in .grid_item .items").index();
 
   $(".grid_item .items").click(function(){
     console.log($(graphic_modals).index());
@@ -72,7 +64,7 @@ $(document).ready(function(){
 
     $(".g_page span:nth-child(1)").text(graphic_modals+1);
     $("html").css({overflowY:"hidden"});
-    $(".graphic_modals>li").eq(graphic_modals).show();
+    $(".graphic_modals>li").eq($(this).index()).show();
     $("#graphic_modal").stop(true,true).fadeIn();
   });
   /*다음보기*/
@@ -104,7 +96,7 @@ $(document).ready(function(){
     }
  });
  
-  //오른쪽 상단보기 닫기 (uiux_design)
+  //오른쪽 상단보기 닫기 (graphic_design)
  $(".g_btn_close, .modal_back").click(function(){
     $("html").css({overflowY:"scroll"});
     $("#graphic_modal").stop(true,true).fadeOut();
@@ -123,7 +115,7 @@ $(".uiux_grid_item .uiux_items").click(function(){
 
   $(".uu_page span:nth-child(1)").text(uiux_modals+1);
   $("html").css({overflowY:"hidden"});
-  $(".uiux_modals>li").eq(uiux_modals).show();
+  $(".uiux_modals>li").eq($(this).index()).show();
   $("#uiux_modal").stop(true,true).fadeIn();
 });
 
